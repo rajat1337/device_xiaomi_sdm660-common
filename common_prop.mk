@@ -1,3 +1,9 @@
+# Apex
+ifeq ($(ENABLE_APEX), true)
+PRODUCT_PRODUCT_PROPERTIES += \
+     ro.apex.updatable=true
+endif
+
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true \
